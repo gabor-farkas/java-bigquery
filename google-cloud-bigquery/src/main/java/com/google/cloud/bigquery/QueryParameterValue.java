@@ -285,7 +285,7 @@ public abstract class QueryParameterValue implements Serializable {
   }
 
   /** Creates a {@code QueryParameterValue} object with a type of TIMESTAMP. */
-  public static QueryParameterValue timestamp(Long value) {
+  public static QueryParameterValue timestamp(Long epochMicros) {
     return of(value, StandardSQLTypeName.TIMESTAMP);
   }
 
